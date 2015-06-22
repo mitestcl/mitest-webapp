@@ -1,0 +1,73 @@
+.chart {
+	text-align: center;
+}
+
+.adsense {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.aviso {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+}
+
+.permalink {
+	font-size: 10px;
+	float: right;
+}
+
+ol.alternativas {
+	margin-bottom: 2em;
+	list-style-type: upper-alpha;
+}
+
+/* diseño de preguntas en la creación/edición de una prueba */
+#preguntas > div {
+	border: 1px dashed gray;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+#preguntas > div > div, #preguntas img.imagen {
+	margin-bottom: 10px;
+}
+#preguntas > div > div > a, #preguntas > div > div > div > div {
+	display: block;
+	margin-bottom: 5px;
+}
+#preguntas textarea.pregunta, #preguntas textarea.explicacion {
+	width: 685px;
+}
+#preguntas select.tipo {
+	width: 90px;
+}
+#preguntas img.imagen {
+	float: left;
+	max-width: 300px;
+	border: 1px solid black;
+	margin-right: 20px;
+}
+#preguntas div.respuestas {
+	float: left;
+	width: 350px;
+}
+#preguntas input.respuesta {
+	width: 310px;
+}
+#preguntas div.respuestas span {
+	color: red;
+}
+
+p.objetivo {
+	font-size: 1.4em;
+	color: #444;
+}
+p.objetivo > span {
+	color: orange;
+	font-weight: bold;
+}
+ul  {
+	list-style-image: url('../img/icons/16x16/actions/check.png');
+}
