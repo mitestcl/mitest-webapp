@@ -88,13 +88,15 @@ echo $f->input([
     'options'=>$categorias,
     'value'=>$Prueba->categoria,
     'check'=>'notempty',
-    'attr'=>'maxlength="100"',
+    'help'=>'Si la categoría no existe la puede crear <a href="'.$_base.'/categorias/crear">aquí</a>',
 ]);
 echo $f->input([
     'name'=>'prueba',
     'label'=>'Prueba',
     'check'=>'notempty',
-    'value'=>$Prueba->prueba
+    'value'=>$Prueba->prueba,
+    'attr'=>'maxlength="100"',
+    'help'=>'Nombre de la prueba dentro de la categoría. Se recomienda utilizar el tópico.',
 ]);
 echo $f->input([
     'type'=>'textarea',
@@ -102,13 +104,15 @@ echo $f->input([
     'label'=>'Descripción',
     'rows'=>5,
     'check'=>'notempty',
-    'value'=>$Prueba->descripcion
+    'value'=>$Prueba->descripcion,
+    'help'=>'Explicación de que contenidos serán abordados en esta prueba',
 ]);
 echo $f->input([
     'type'=>'checkbox',
     'name'=>'publica',
     'label'=>'Pública',
-    'checked'=>$Prueba->publica
+    'checked'=>$Prueba->publica,
+    'help'=>'Indica si la prueba puede ser revisada por cualquier usuario. Útil sólo si la prueba contendrá preguntas públicas. A pesar que la prueba sea pública, aquellas preguntas marcadas como privadas (o no públicas) no serán visibles por los usuarios.',
 ]);
 echo $f->input([
     'type'=>'div',

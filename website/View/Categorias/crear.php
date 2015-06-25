@@ -14,6 +14,7 @@ echo $f->input([
     'type'=>'checkbox',
     'name'=>'publica',
     'label'=>'Pública',
-    'checked'=>true
+    'checked'=>true,
+    'help'=>'Si la categoría es pública se mostrarán todas las pruebas públicas que le pertenecen. Si es privada no se mostrará ninguna prueba y la categoría no estará disponible a los usuarios.',
 ]);
 echo $f->end('Crear categoría');
