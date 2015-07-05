@@ -18,6 +18,8 @@ new \sowerphp\general\View_Helper_Table([
     <a href="<?=$_base?>/d/<?=$id?>" title="Descargar"><img src="<?=$_base?>/img/icons/128x128/actions/download.png" alt="" /></a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="<?=$_base?>/d/<?=$id?>" title="Descargar"><img src="<?=$_base?>/exportar/qrcode/<?=base64_encode($_url.'/d/'.$id)?>" alt="" style="width:128px;height:128px" /></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://telegram.me/MiTeStBot?start=r:<?=$id?>" title="Resolver en Telegram"><img src="<?=$_base?>/img/icons/128x128/actions/telegram.png" alt="" /></a>
 </div>
 
 <h2>Pregunta de ejemplo</h2>

@@ -71,6 +71,18 @@ class Model_Pruebas extends \Model_Plural_App
         ', [':id'=>$id]);
     }
 
+    public function getListByCategoria($id, $onlypublics = false)
+    {
+        return $this->db->getTable('
+            SELECT id, prueba
+            FROM prueba
+            WHERE
+                categoria = :id
+                '.($onlypublics?'AND publica = true':'').'
+            ORDER BY orden, creada
+        ', [':id'=>$id]);
+    }
+
     public function getPreguntas($pruebas, $usuario, $tipos_porcentaje, $preguntas_cantidad)
     {
         // obtener preguntas

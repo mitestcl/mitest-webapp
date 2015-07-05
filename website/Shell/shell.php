@@ -39,7 +39,7 @@ define ('DIR_PROJECT', dirname(dirname(dirname(__FILE__))));
 // Extensiones que se utilizarán. Deberá ser vendor/extensión dentro de
 // DIR_FRAMEWORK/extensions o bien dentro de DIR_PROJECT/extensions, ejemplo:
 // $_EXTENSIONS = array('sowerphp/dev', 'sowerphp/general');
-$_EXTENSIONS = array('sowerphp/app');
+$_EXTENSIONS = array('sowerphp/app', 'sowerphp/general');
 
 // Iniciar bootstrap (proceso que prepara e inicia el proyecto)
 if (!@include(DIR_FRAMEWORK.'/lib/sowerphp/core/bootstrap.php')) {

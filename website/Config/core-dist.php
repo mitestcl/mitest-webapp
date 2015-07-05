@@ -94,3 +94,9 @@ EOF;
 \sowerphp\core\Configure::write('app.self_register', [
     'groups' => ['usuarios']
 ]);
+
+// Configuración para Telegram
+\sowerphp\core\Configure::write('telegram.default', [
+    'bot' => 'MiTeStBot',
+    'token' => '',
+]);

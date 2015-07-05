@@ -38,7 +38,8 @@ abstract class Controller_App extends \sowerphp\app\Controller_App
                 'login' => '/pruebas',
             ],
         ],
-        'Api'
+        'Api',
+        'Log',
     ]; ///< Componentes usados por el controlador
 
 }

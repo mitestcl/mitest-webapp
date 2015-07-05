@@ -21,11 +21,11 @@ foreach($categorias as &$categoria) {
     echo '<h4 class="panel-title">';
     echo '<a class="collapsed" data-toggle="collapse" data-parent="#categorias" href="#',$id,'" aria-expanded="false" aria-controls="',$id,'">';
     echo $categoria['categoria'];
-    echo '</a></h4></div>',"\n";
+    echo '</a> <a href="https://telegram.me/MiTeStBot?start=c:'.$categoria['id'].'" title="Abrir categoría en Telegram" style="float:right"><img src="'.$_base.'/img/icons/16x16/actions/telegram.png" alt="telegram" /></a></h4></div>',"\n";
     // mostrar pruebas para la categoría
     echo '<div id="',$id,'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_',$id,'"><div class="panel-body">',"\n";
     echo '<table class="table">',"\n";
-    echo '<thead><tr><th>Prueba</th><th>Descripción</th><th>Acciones</th></tr></thead><tbody>',"\n";
+    echo '<thead><tr><th>Prueba</th><th>Descripción</th><th style="width:100px">Acciones</th></tr></thead><tbody>',"\n";
     foreach($categoria['pruebas'] as &$prueba) {
         $id = \sowerphp\core\Utility_String::normalize($prueba['prueba'].'-'.$prueba['id']);
         echo '<tr id="',$id,'">',"\n";
@@ -34,6 +34,7 @@ foreach($categorias as &$categoria) {
         echo '<td>',"\n";
         echo '<a href="',$_base,'/p/',$prueba['id'],'" title="Ir a la página de la prueba"><img src="',$_base,'/img/icons/16x16/actions/next.png" alt="" /></a>',"\n";
         echo '<a href="',$_base,'/r/',$prueba['id'],'" title="Resolver en línea"><img src="',$_base,'/img/icons/16x16/actions/resolver.png" alt="" /></a>',"\n";
+        echo '<a href="https://telegram.me/MiTeStBot?start=r:',$prueba['id'],'" title="Resolver en Telegram"><img src="',$_base,'/img/icons/16x16/actions/telegram.png" alt="" /></a>',"\n";
         echo '<a href="',$_base,'/d/',$prueba['id'],'" title="Descargar"><img src="',$_base,'/img/icons/16x16/actions/download.png" alt="" /></a>',"\n";
         echo '</td>',"\n";
         echo '</tr>',"\n\n";

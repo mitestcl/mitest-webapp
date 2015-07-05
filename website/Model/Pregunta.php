@@ -281,4 +281,20 @@ class Model_Pregunta extends \Model_App
         ', [':pregunta'=>$this->id]);
     }
 
+    /**
+     * Método que entrega el atributo imagen_data (como resource)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @version 2015-07-05
+     */
+    public function getImagenData()
+    {
+        if (!is_resource($this->imagen_data)) {
+            $this->imagen_data = $this->db->getValue(
+                'SELECT imagen_data FROM pregunta WHERE id = :id',
+                [':id'=>$this->id]
+            );
+        }
+        return $this->imagen_data;
+    }
+
 }
