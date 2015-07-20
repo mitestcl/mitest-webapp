@@ -142,7 +142,7 @@ class Controller_Bot extends \sowerphp\app\Controller_Bot
      * Comando qe permite seleccionar una prueba y empezar a resolverla
      * @param prueba ID de la prueba que se desea resolver
      * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
-     * @version 2015-07-04
+     * @version 2015-07-20
      */
     protected function _bot_resolver($prueba = null)
     {
@@ -175,7 +175,6 @@ class Controller_Bot extends \sowerphp\app\Controller_Bot
                 $this->actual->Prueba->total_preguntas = 0;
                 $this->actual->Prueba->respuestas_correctas = 0;
                 $this->Bot->send('Resolverás la prueba "'.$this->actual->Prueba->prueba.'"');
-                $this->Log->write(json_encode($this->actual->Prueba), LOG_DEBUG);
                 $this->_bot_pregunta();
             }
         }
