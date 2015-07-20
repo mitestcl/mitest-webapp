@@ -14,7 +14,7 @@ COMMENT ON COLUMN categoria.id IS 'Identificador de la categoría';
 COMMENT ON COLUMN categoria.categoria IS 'Nombre de la categoría';
 COMMENT ON COLUMN categoria.usuario IS 'Dueño de la categoría';
 COMMENT ON COLUMN categoria.madre IS 'Categoría madre de esta categoría';
-COMMENT ON COLUMN categoria.publica IS 'Indica si es visible para todos o solo para su dueño'
+COMMENT ON COLUMN categoria.publica IS 'Indica si es visible para todos o solo para su dueño';
 COMMENT ON COLUMN categoria.orden IS 'Orden en que debe ser listada';
 CREATE SEQUENCE categoria_id_seq
     START WITH 1
