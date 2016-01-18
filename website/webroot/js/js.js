@@ -58,7 +58,7 @@ function agregarPregunta() {
         '<div>'+
             '<input type="hidden" name="preguntas[]" value="'+preguntaId+'" />'+
             '<div>'+
-                '<a href="#" onclick="$(this).parent().parent().remove(); return false" title="Eliminar" class="fright"><img src="'+_base+'/img/icons/16x16/actions/delete.png" alt="del"></a>'+
+                '<a href="#" onclick="$(this).parent().parent().remove(); return false" title="Eliminar" class="fright"><span class="fa fa-remove btn btn-default"></span></a>'+
                 'Activa: <input type="checkbox" name="activa'+preguntaId+'" checked="checked" /> '+
                 'Pública: <input type="checkbox" name="publica'+preguntaId+'" checked="checked" /> '+
                 'Tipo: <select name="tipo'+preguntaId+'" class="tipo">'+
@@ -86,7 +86,7 @@ function agregarRespuesta(preguntaId) {
     $('#respuestas'+preguntaId).append(
         '<div>'+
             '<input type="text" name="respuesta'+preguntaId+'[]" placeholder="Alternativa" class="respuesta" />'+
-            ' <a href="#" onclick="$(this).parent().remove(); return false" title="Eliminar"><img src="'+_base+'/img/icons/16x16/actions/delete.png" alt="del"></a>'+
+            ' <a href="#" onclick="$(this).parent().remove(); return false" title="Eliminar" class="fright"><span class="fa fa-remove btn btn-default"></span></a>'+
         '</div>'
     );
 }

@@ -49,7 +49,7 @@ echo $f->input([
 ]);
 echo $f->input([
     'type'=>'div',
-    'label'=>'Preguntas <a href="javascript:agregarPregunta()" title="Agregar una pregunta"><img src="'.$_base.'/img/icons/16x16/actions/add.png" alt="add" /></a>',
+    'label'=>'Preguntas <a href="javascript:agregarPregunta()" title="Agregar una pregunta"><span class="fa fa-plus btn btn-default"></span></a>',
     'value'=>'<div id="preguntas"></div>'
 ]);
 echo $f->end('Crear prueba');

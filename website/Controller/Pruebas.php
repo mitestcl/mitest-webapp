@@ -48,17 +48,17 @@ class Controller_Pruebas extends \Controller_App
             '/generar' => [
                 'name' => 'Generar prueba',
                 'desc' => 'Generar prueba para descargar',
-                'imag' => '/img/icons/48x48/generar.png',
+                'icon' => 'fa fa-file-pdf-o',
             ],
             '/listar' => [
                 'name' => 'Pruebas',
                 'desc' => 'Crear, editar y/o eliminar pruebas',
-                'imag' => '/img/icons/48x48/prueba.png',
+                'icon' => 'fa fa-list-alt',
             ],
             '/../categorias/listar' => [
                 'name' => 'Categorías',
                 'desc' => 'Crear, editar y/o eliminar categorías',
-                'imag' => '/img/icons/48x48/categorias.png',
+                'icon' => 'fa fa-list',
             ],
         ];
         $this->set([

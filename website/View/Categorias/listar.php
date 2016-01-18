@@ -3,13 +3,13 @@
 foreach($categorias as &$categoria) {
     $categoria['publica'] = $categoria['publica'] ? 'Si' : 'No';
     $categoria[] =
-        '<a href="bajar/'.$categoria['id'].'" title="Bajar"><img src="'.$_base.'/img/icons/16x16/actions/down.png" alt="" /></a> '.
-        '<a href="subir/'.$categoria['id'].'" title="Subir"><img src="'.$_base.'/img/icons/16x16/actions/up.png" alt="" /></a> '.
-        '<a href="editar/'.$categoria['id'].'" title="Editar"><img src="'.$_base.'/img/icons/16x16/actions/edit.png" alt="" /></a> '.
-        '<a href="eliminar/'.$categoria['id'].'" title="Eliminar" onclick="return eliminar(\'Categoría\', \''.$categoria['categoria'].'\')"><img src="'.$_base.'/img/icons/16x16/actions/delete.png" alt="" /></a>'
+        '<a href="bajar/'.$categoria['id'].'" title="Bajar"><span class="fa fa-toggle-down btn btn-default"></span></a> '.
+        '<a href="subir/'.$categoria['id'].'" title="Subir"><span class="fa fa-toggle-up btn btn-default"></span></a> '.
+        '<a href="editar/'.$categoria['id'].'" title="Editar"><span class="fa fa-edit btn btn-default"></span></a> '.
+        '<a href="eliminar/'.$categoria['id'].'" title="Eliminar" onclick="return eliminar(\'Categoría\', \''.$categoria['categoria'].'\')"><span class="fa fa-remove btn btn-default"></span></a>'
     ;
     unset($categoria['id']);
 }
 array_unshift($categorias, array('Categoría', 'Pública', 'Pruebas', 'Acciones'));
-echo '<a href="crear" title="Nuevo"><img src="'.$_base.'/img/icons/16x16/actions/new.png" alt="" /></a>';
+echo '<a href="crear" title="Nuevo"><span class="fa fa-plus btn btn-default"> Crear nueva categoría</span></a>';
 new \sowerphp\general\View_Helper_Table($categorias);
