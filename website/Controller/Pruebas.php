@@ -48,7 +48,7 @@ class Controller_Pruebas extends \Controller_App
             '/generar' => [
                 'name' => 'Generar prueba',
                 'desc' => 'Generar prueba para descargar',
-                'icon' => 'fa fa-file-pdf-o',
+                'icon' => 'far fa-file-pdf',
             ],
             '/listar' => [
                 'name' => 'Pruebas',

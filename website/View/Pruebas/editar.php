@@ -24,7 +24,7 @@ foreach($Prueba->preguntas as &$Pregunta) {
 <div>
     <input type="hidden" name="respuestaId{$preguntaId}[]" value="{$Respuesta->id}" />
     <input type="text" name="respuesta{$preguntaId}[]" value="${value}" placeholder="Alternativa" class="respuesta" />
-    <a href="#" onclick="$(this).parent().remove(); return false" title="Eliminar" class="fright"><span class="fa fa-remove btn btn-default"></span></a>
+    <a href="#" onclick="$(this).parent().remove(); return false" title="Eliminar" class="fright"><span class="fas fa-times btn btn-default"></span></a>
 </div>
 EOF;
     }
@@ -46,7 +46,7 @@ EOF;
     <input type="hidden" name="preguntasIds[]" value="{$Pregunta->id}" />
     <input type="hidden" name="id{$preguntaId}" value="{$Pregunta->id}" />
     <div>
-        <a href="#" onclick="$(this).parent().parent().remove(); return false" title="Eliminar" class="fright"><span class="fa fa-remove btn btn-default"></span></a>
+        <a href="#" onclick="$(this).parent().parent().remove(); return false" title="Eliminar" class="fright"><span class="fas fa-times btn btn-default"></span></a>
         Activa: <input type="checkbox" name="activa{$preguntaId}"{$activa} />
         Pública: <input type="checkbox" name="publica{$preguntaId}"{$publica} />
         Tipo: <select name="tipo{$preguntaId}" class="tipo">
