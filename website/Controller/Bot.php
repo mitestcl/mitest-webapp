@@ -1,10 +1,31 @@
 <?php
 
+/**
+ * MiTeSt
+ * Copyright (C) SASCO SpA (https://sasco.cl)
+ *
+ * Este programa es software libre: usted puede redistribuirlo y/o
+ * modificarlo bajo los términos de la Licencia Pública General Affero de GNU
+ * publicada por la Fundación para el Software Libre, ya sea la versión
+ * 3 de la Licencia, o (a su elección) cualquier versión posterior de la
+ * misma.
+ *
+ * Este programa se distribuye con la esperanza de que sea útil, pero
+ * SIN GARANTÍA ALGUNA; ni siquiera la garantía implícita
+ * MERCANTIL o de APTITUD PARA UN PROPÓSITO DETERMINADO.
+ * Consulte los detalles de la Licencia Pública General Affero de GNU para
+ * obtener una información más detallada.
+ *
+ * Debería haber recibido una copia de la Licencia Pública General Affero de GNU
+ * junto a este programa.
+ * En caso contrario, consulte <http://www.gnu.org/licenses/agpl.html>.
+ */
+
 namespace website;
 
 /**
  * Controlador para MiTeStBot
- * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+ * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
  * @version 2015-07-04
  */
 class Controller_Bot extends \sowerphp\app\Controller_Bot
@@ -22,7 +43,7 @@ class Controller_Bot extends \sowerphp\app\Controller_Bot
     /**
      * Método que se llama antes de ejecutar el comando
      * @param command
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2015-07-04
      */
     protected function beforeRun($command)
@@ -42,7 +63,7 @@ class Controller_Bot extends \sowerphp\app\Controller_Bot
     /**
      * Método que se llama después de ejecutar el comano
      * @param commad
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2015-07-04
      */
     protected function afterRun($command)
@@ -55,7 +76,7 @@ class Controller_Bot extends \sowerphp\app\Controller_Bot
      * Comando que se ejecuta al iniciar el bot, podrá lanzar directamente un
      * usuario, una categoría o la resolución de una prueba
      * @param token String con formato u:usuario, c:categoria o r:prueba (opcional)
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2015-07-04
      */
     protected function _bot_start($token = null)
@@ -73,7 +94,7 @@ class Controller_Bot extends \sowerphp\app\Controller_Bot
     /**
      * Comando que permite elegir un usuario y muestra sus categorías
      * @param usuario Nombre del usuario que se desea explorar
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2015-07-04
      */
     protected function _bot_usuario($usuario = null)
@@ -101,7 +122,7 @@ class Controller_Bot extends \sowerphp\app\Controller_Bot
     /**
      * Comando que permite elegir una categoría y muestra sus pruebas
      * @param categoria ID de la categoría que se quieren revisar sus pruebas
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2015-07-04
      */
     protected function _bot_categoria($categoria = null)
@@ -141,7 +162,7 @@ class Controller_Bot extends \sowerphp\app\Controller_Bot
     /**
      * Comando qe permite seleccionar una prueba y empezar a resolverla
      * @param prueba ID de la prueba que se desea resolver
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2015-07-20
      */
     protected function _bot_resolver($prueba = null)
@@ -183,7 +204,7 @@ class Controller_Bot extends \sowerphp\app\Controller_Bot
     /**
      * Comando que permite ir resolviendo las preguntas y enviando la respuesta
      * @param respuestas La respuesta de la pregunta que se hizo
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2015-07-04
      */
     protected function _bot_pregunta($respuestas = null)
@@ -245,7 +266,7 @@ class Controller_Bot extends \sowerphp\app\Controller_Bot
      * @param letras Arreglo con las letras
      * @param correctas Cantidad de alternativas correctas
      * @return Arreglo con las alternativas correctas
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2015-07-04
      */
     private function crearAlternativas($letras, $correctas)

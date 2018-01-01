@@ -2,10 +2,10 @@
 
 /**
  * MiTeSt
- * Copyright (C) 2014 Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+ * Copyright (C) SASCO SpA (https://sasco.cl)
  *
  * Este programa es software libre: usted puede redistribuirlo y/o
- * modificarlo bajo los términos de la Licencia Pública General GNU
+ * modificarlo bajo los términos de la Licencia Pública General Affero de GNU
  * publicada por la Fundación para el Software Libre, ya sea la versión
  * 3 de la Licencia, o (a su elección) cualquier versión posterior de la
  * misma.
@@ -13,19 +13,19 @@
  * Este programa se distribuye con la esperanza de que sea útil, pero
  * SIN GARANTÍA ALGUNA; ni siquiera la garantía implícita
  * MERCANTIL o de APTITUD PARA UN PROPÓSITO DETERMINADO.
- * Consulte los detalles de la Licencia Pública General GNU para obtener
- * una información más detallada.
+ * Consulte los detalles de la Licencia Pública General Affero de GNU para
+ * obtener una información más detallada.
  *
- * Debería haber recibido una copia de la Licencia Pública General GNU
+ * Debería haber recibido una copia de la Licencia Pública General Affero de GNU
  * junto a este programa.
- * En caso contrario, consulte <http://www.gnu.org/licenses/gpl.html>.
+ * En caso contrario, consulte <http://www.gnu.org/licenses/agpl.html>.
  */
 
 namespace website;
 
 /**
  * Controlador para las pruebas
- * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+ * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
  * @version 2014-11-25
  */
 class Controller_Pruebas extends \Controller_App
@@ -148,7 +148,7 @@ class Controller_Pruebas extends \Controller_App
 
     /**
      * Controlador para editar un registro de tipo Prueba
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2014-11-25
      */
     public function editar($id)
@@ -399,7 +399,7 @@ class Controller_Pruebas extends \Controller_App
 
     /**
      * Acción para descargar una prueba
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2014-11-26
      */
     public function descargar($id, $format = null)
@@ -474,7 +474,7 @@ class Controller_Pruebas extends \Controller_App
 
     /**
      * Acción para mostrar formulario para resolver prueba en línea
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2014-11-09
      */
     public function resolver($prueba)
@@ -508,7 +508,7 @@ class Controller_Pruebas extends \Controller_App
 
     /**
      * Acción para mostrar los resultados de la prueba enviada en línea
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2014-11-09
      */
     public function resultado($prueba)

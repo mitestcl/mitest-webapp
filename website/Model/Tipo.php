@@ -1,11 +1,11 @@
 <?php
 
 /**
- * SowerPHP: Minimalist Framework for PHP
- * Copyright (C) SowerPHP (http://sowerphp.org)
+ * MiTeSt
+ * Copyright (C) SASCO SpA (https://sasco.cl)
  *
  * Este programa es software libre: usted puede redistribuirlo y/o
- * modificarlo bajo los términos de la Licencia Pública General GNU
+ * modificarlo bajo los términos de la Licencia Pública General Affero de GNU
  * publicada por la Fundación para el Software Libre, ya sea la versión
  * 3 de la Licencia, o (a su elección) cualquier versión posterior de la
  * misma.
@@ -13,12 +13,12 @@
  * Este programa se distribuye con la esperanza de que sea útil, pero
  * SIN GARANTÍA ALGUNA; ni siquiera la garantía implícita
  * MERCANTIL o de APTITUD PARA UN PROPÓSITO DETERMINADO.
- * Consulte los detalles de la Licencia Pública General GNU para obtener
- * una información más detallada.
+ * Consulte los detalles de la Licencia Pública General Affero de GNU para
+ * obtener una información más detallada.
  *
- * Debería haber recibido una copia de la Licencia Pública General GNU
+ * Debería haber recibido una copia de la Licencia Pública General Affero de GNU
  * junto a este programa.
- * En caso contrario, consulte <http://www.gnu.org/licenses/gpl.html>.
+ * En caso contrario, consulte <http://www.gnu.org/licenses/agpl.html>.
  */
 
 // namespace del modelo
@@ -39,10 +39,10 @@ class Model_Tipo extends \Model_App
     protected $_table = 'tipo'; ///< Tabla del modelo
 
     // Atributos de la clase (columnas en la base de datos)
-    public $id; ///< Identificador del tipo: integer(32) NOT NULL DEFAULT 'nextval('tipo_id_seq'::regclass)' AUTO PK 
-    public $tipo; ///< Nombre del tipo (ej: fácil, normal o difícil): character varying(10) NOT NULL DEFAULT '' 
-    public $peso; ///< Indica dificultad (menor número, más fácil la pregunta): smallint(16) NOT NULL DEFAULT '0' 
-    public $porcentaje; ///< Porcentaje por defecto utilizado para seleccionar preguntas cuando se hace al azar: smallint(16) NOT NULL DEFAULT '0' 
+    public $id; ///< Identificador del tipo: integer(32) NOT NULL DEFAULT 'nextval('tipo_id_seq'::regclass)' AUTO PK
+    public $tipo; ///< Nombre del tipo (ej: fácil, normal o difícil): character varying(10) NOT NULL DEFAULT ''
+    public $peso; ///< Indica dificultad (menor número, más fácil la pregunta): smallint(16) NOT NULL DEFAULT '0'
+    public $porcentaje; ///< Porcentaje por defecto utilizado para seleccionar preguntas cuando se hace al azar: smallint(16) NOT NULL DEFAULT '0'
 
     // Información de las columnas de la tabla en la base de datos
     public static $columnsInfo = array(

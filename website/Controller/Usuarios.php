@@ -2,10 +2,10 @@
 
 /**
  * MiTeSt
- * Copyright (C) 2015 Esteban De La Fuente Rubio (esteban[at]delaf.cl)
+ * Copyright (C) SASCO SpA (https://sasco.cl)
  *
  * Este programa es software libre: usted puede redistribuirlo y/o
- * modificarlo bajo los términos de la Licencia Pública General GNU
+ * modificarlo bajo los términos de la Licencia Pública General Affero de GNU
  * publicada por la Fundación para el Software Libre, ya sea la versión
  * 3 de la Licencia, o (a su elección) cualquier versión posterior de la
  * misma.
@@ -13,12 +13,12 @@
  * Este programa se distribuye con la esperanza de que sea útil, pero
  * SIN GARANTÍA ALGUNA; ni siquiera la garantía implícita
  * MERCANTIL o de APTITUD PARA UN PROPÓSITO DETERMINADO.
- * Consulte los detalles de la Licencia Pública General GNU para obtener
- * una información más detallada.
+ * Consulte los detalles de la Licencia Pública General Affero de GNU para
+ * obtener una información más detallada.
  *
- * Debería haber recibido una copia de la Licencia Pública General GNU
+ * Debería haber recibido una copia de la Licencia Pública General Affero de GNU
  * junto a este programa.
- * En caso contrario, consulte <http://www.gnu.org/licenses/gpl.html>.
+ * En caso contrario, consulte <http://www.gnu.org/licenses/agpl.html>.
  */
 
 namespace website;
@@ -27,7 +27,7 @@ namespace website;
  * Clase final para el controlador asociado a la tabla usuario de la base de datos
  * Comentario de la tabla: Tabla para usuarios del sistema
  * Esta clase permite controlar las acciones entre el modelo y vista para la tabla usuario
- * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+ * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
  * @version 2014-12-02
  */
 final class Controller_Usuarios extends \Controller_App
@@ -41,7 +41,7 @@ final class Controller_Usuarios extends \Controller_App
 
     /**
      * Acción para mostrar el listado de usuarios
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2014-11-08
      */
     public function index()
@@ -52,7 +52,7 @@ final class Controller_Usuarios extends \Controller_App
     /**
      * Controlador para mostrar el perfil público de un usuario
      * @param usuario Usuario que se quiere visualizar
-     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]delaf.cl)
+     * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
      * @version 2014-11-08
      */
     public function mostrar($usuario)
